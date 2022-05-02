@@ -67,12 +67,11 @@ def display(all_sample, all_prediction):
 
 
 # Loading the dataset
-y_test = loadMNISTLabels('C:/Users/ronbu/PycharmProjects/Modelim/C&C_ex4/MNIST_data/t10k-labels-idx1-ubyte')
-y_train = loadMNISTLabels('C:/Users/ronbu/PycharmProjects/Modelim/C&C_ex4/MNIST_data/train-labels-idx1-ubyte')
+y_test = loadMNISTLabels('../MNIST_data/t10k-labels-idx1-ubyte')
+y_train = loadMNISTLabels('../MNIST_data/train-labels-idx1-ubyte')
 
-X_test = loadMNISTImages('C:/Users/ronbu/PycharmProjects/Modelim/C&C_ex4/MNIST_data/t10k-images-idx3-ubyte')
-X_train = loadMNISTImages('C:/Users/ronbu/PycharmProjects/Modelim/C&C_ex4/MNIST_data/train-images-idx3-ubyte')
-# X_train = loadMNISTImages('../MNIST_data/train-images-idx3-ubyte')
+X_test = loadMNISTImages('../MNIST_data/t10k-images-idx3-ubyte')
+X_train = loadMNISTImages('../MNIST_data/train-images-idx3-ubyte')
 
 
 # random permutation of the input
@@ -104,9 +103,4 @@ plt.ylabel("Test Accuracy")
 plt.plot(steps, test_acc, 'm')
 plt.title("Test Accuracy As Function Of #Steps")
 plt.show()
-
-
-
-
-
 
